@@ -1,0 +1,128 @@
+.buscador {
+    height: auto;
+    display: flex;
+}
+
+.ubicacionBoton{
+    display: flex;
+    justify-content: flex-end;    
+}
+
+.btnClose {
+    width: 25px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border-top-right-radius: 10px;
+    border: 1px solid orange;
+    transition-duration: 500ms;
+}
+
+.btnClose:hover{
+    width: 25px;
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    border-top-right-radius: 10px;
+    border: 1px solid red;
+}
+
+.cards {
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    width: 500px;
+    background-image: radial-gradient(rgb(151, 218, 240), rgb(220, 233, 238));
+    transition: all 500ms;
+}
+
+.cards:hover{
+    background-image: radial-gradient(rgb(53, 166, 204), rgb(220, 233, 238));
+    height: 230px;
+    width: 520px;
+    box-shadow: 10px 10px 20px gray;
+}
+
+.cardContent div {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.cardContent h3 {
+    color: white;
+    text-shadow: 1px 1px 3px blue;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.cardContent h1 {
+    color: gray;
+    text-shadow: 3px 3px 3px white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inputText{
+    transition: all 500ms !important;
+    width: 300px !important;
+    height: 40px;
+}
+.inputText:hover{
+    width: 350px !important;
+    box-shadow: 5px 5px 10px lightblue;
+}
+
+.ico {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-image: radial-gradient(rgb(171, 216, 231), rgb(244, 244, 245));
+    
+}
+
+.cards:hover .ico {
+    background-image: radial-gradient(rgb(220, 233, 238), rgb(113, 205, 236));
+}
+
+.error {
+    color: red;
+    box-shadow: red;
+}
+
+@media (max-width: 600px) {
+    .inputText{
+        transition: all 500ms !important;
+        width: 200px !important;
+        height: 40px;
+    }
+    .inputText:hover{
+        width: 220px !important;
+        box-shadow: 5px 5px 10px lightblue;
+    }
+    .cards {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+        height: 200px;
+    }
+    .cards:hover {
+        background-image: radial-gradient(rgb(53, 166, 204), rgb(220, 233, 238));
+        box-shadow: 10px 10px 20px gray;
+        height: 205px;
+    }
+
+    .ico {
+        height: 80px;
+        width: 80px;
+    }
+
+  }
